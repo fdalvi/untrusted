@@ -15,3 +15,10 @@ map.defineObject("trapbreaker", {
 var player = map.getPlayer()
 map.placeObject(player.getX(),player.getY()-1,"trapbreaker");
 ```
+
+## fdalvi: Change the trap behaviour
+Just redefine the `trap_behaviour` function to do nothing, and you can just walk through to the exit.
+```javascript
+function trap_behaviour (me, left, right) {
+}
+```
